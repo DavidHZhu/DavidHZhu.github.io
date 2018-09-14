@@ -1,3 +1,8 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
 /* Image changes when browser resized*/
 .responsiveIMG {
 	width: 100%;
@@ -6,17 +11,26 @@
 /* Background scroll effect */
 .parallax { 
     
+	text-align: center;
+	color:white;
+	font-size:80px;
+	font-family:Arial;
+	font-weight: bold;
     background-image: url("images/sunseticon.jpg");
-
-    height: 500px; 
+    height: 400px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 110%;
 }
 
 #example{
 	height: 500px;
+}
+
+#profilePic
+{
+	border-radius: 50%;
 }
