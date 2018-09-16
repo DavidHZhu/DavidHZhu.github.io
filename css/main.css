@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Fixed Menu or Navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Amaranth;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/* Background scroll effect */
+.parallax1 { 
+    
+	text-align: center;
+	color:white;
+	font-size:50px;
+	font-family:Amaranth;
+	font-weight: bold;
+    background-image: url("../images/darkSunset.jpg");
+    height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Background scroll effect 2 */
+.parallax2 { 
+
+	padding-top: 50px;
+    background-image: url("../images/secondFrame.png");
+    height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text div for description and links */
+#about_me{
+	padding-top:40px;
+	padding-right:200px;
+	padding-left:200px;
+	padding-bottom:90px;
+
+	height: 200px;
+	text-align: justify;
+	font-size:20px;
+	font-family:Amaranth;
+}
+
+/* Text div with images for various projects */
+#projects{
+	
+	height: 700px;
+	text-align: justify;
+	font-size:20px;
+	font-family:Amaranth;
+	
+}
+
+#socialmedia{
+	display:flex;
+	justify-content: space-around;
+	margin-left:350px;
+	margin-right:350px;
+	height: 150px;
+}
+
+/*SOCIAL MEDIAL ICONS*/
+.clickIcon{
+	margin-top:20px;
+	margin-bottom:20px;
+	height:90px;
+	width:90px;
+	/*margin-left:400px;*/
+}
+
+
+.container{
+	display:flex;
+	margin-right:200px;
+	margin-left:200px;
+}
+
+.container:hover{
+
+}
