@@ -1,10 +1,11 @@
-
-
 body {
   font-family: Raleway;
-  /* background-image: url("../images/darkSunset.jpg");
-  background-size:cover;
-  background-repeat: no-repeat; */
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5em;
 }
 
 #landerContent {
@@ -18,17 +19,22 @@ body {
 }
 
 .lander {
-  
   background-image: url("../images/darkSunset.jpg");
   background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-bottom: 500px;
 }
 
-h1{
-  font-weight: bold;
-  font-size: 5em;
-}
-.navbar-dark .navbar-nav .active>.nav-link {
+
+/* .navbar-dark .navbar-nav .active>.nav-link {
   text-decoration: underline;
+} */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:white;
+}
+
+.about-me{
+  height:1000px;
 }
