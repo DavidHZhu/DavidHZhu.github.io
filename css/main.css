@@ -1,0 +1,40 @@
+body {
+  font-family: Raleway;
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5em;
+}
+
+#landerContent {
+  padding-top:10%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1)
+}
+
+.lander {
+  background-image: url("../images/darkSunset.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 500px;
+}
+
+
+/* .navbar-dark .navbar-nav .active>.nav-link {
+  text-decoration: underline;
+} */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:white;
+}
+
+.about-me{
+  height:1000px;
+}
