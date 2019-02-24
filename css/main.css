@@ -38,3 +38,8 @@ h1 {
 .about-me{
   height:1000px;
 }
+
+.media-btn {
+  height:75px;
+  width:75px;
+}
