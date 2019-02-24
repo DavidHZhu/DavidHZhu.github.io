@@ -1,143 +1,60 @@
-body{
-	margin: 0;
-	padding: 0;
+body {
+  font-family: Raleway;
+
 }
 
-/* Fixed Menu or Navbar*/
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+h1 {
+  font-weight: bold;
+  font-size: 5em;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+#landerContent {
+  padding-top:10%;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family:Amaranth;
-  font-size: 20px;
+  vertical-align: middle;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1)
 }
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+.lander {
+  background-image: url("../images/darkSunset.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 350px;
 }
 
 
-/* Background scroll effect */
-.parallax1 { 
-	text-align: center;
-	color:white;
-	font-size:50px;
-	font-family:Amaranth;
-	font-weight: bold;
-    background-image: url("../images/darkSunset.jpg");
-    height: 700px; 
+/* .navbar-dark .navbar-nav .active>.nav-link {
+  text-decoration: underline;
+} */
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:white;
 }
 
-/* Background scroll effect 2 */
-.parallax2 { 
-	padding-top: 50px;
-    background-image: url("../images/background3.jpg");
-
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about-me {
+  height:200%;
 }
 
-/* Text div for description and links */
-#about_me{
-	padding-top:40px;
-	padding-right:200px;
-	padding-left:200px;
-	padding-bottom:90px;
-
-	height: 200px;
-	text-align: justify;
-	font-size:20px;
-	font-family:Amaranth;
+.experience {
+  height:300vh;
+  background-color:lightslategray;
+}
+.media-btn {
+  height:75px;
+  width:75px;
 }
 
-/* Text div with images for various projects */
-#projects1{	
-	height: 750px;
-	text-align: justify;
-	font-size:20px;
-	font-family:Amaranth;
-	
+.profilePic {
+  border-radius: 100%;
+
 }
 
-#projects2{
-	padding-top:15px;
-	height:1100px;
-	background-image: url("../images/background3.jpg");
-	font-family:Amaranth;
-	font-size:20px;
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#socialmedia{
-	display:flex;
-	justify-content: space-around;
-	margin-left:350px;
-	margin-right:350px;
-	height: 150px;
-}
-
-/*SOCIAL MEDIAL ICONS*/
-.clickIcon{
-	margin-top:20px;
-	margin-bottom:20px;
-	height:90px;
-	width:90px;
-	/*margin-left:400px;*/
-}
-
-/* Flex container for horizontal rows in Projects*/
-.container{
-	display:flex;
-	margin-right:200px;
-	margin-left:200px;
-	margin-bottom:30px;
-	font-size:20px;
-	/*border:5px solid white;*/
-}
-
-.ArduinoPic{
-	width:300px; 
-	height:250px; 
-	border:5px solid blue; 
-	margin-right:50px;
-}
-
-.InvaderPic{
-	width:300px; 
-	height:250px; 
-	border:5px solid green; 
-	margin-right:50px;
-}
-
-.RPNPic{
-	width:300px; 
-	height:250px; 
-	border:5px solid red; 
-	margin-right:50px;
+.shadowTxt {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1)
 }
