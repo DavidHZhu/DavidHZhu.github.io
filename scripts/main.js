@@ -15,6 +15,12 @@ $(document).ready(function () {
             'slow');
     });
 
+    $("#nav-experience").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".experience").offset().top},
+            'slow');
+    });
+
     $("#learnMore").click(function() {
         $('html,body').animate({
             scrollTop: $(".about-me").offset().top},
