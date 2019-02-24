@@ -3570,10 +3570,16 @@
   animation-iteration-count: infinite;
 }
 
-.animated.small-delay {
+.animated.small-delay1 {
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
+
+.animated.small-delay2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
