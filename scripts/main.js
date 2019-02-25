@@ -21,10 +21,19 @@ $(document).ready(function () {
             'slow');
     });
 
+    $("#nav-projects").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".projects").offset().top},
+            'slow');
+    });
+
     $("#learnMore").click(function() {
         $('html,body').animate({
             scrollTop: $(".about-me").offset().top},
             'slow');
     });
+
+    $('body').scrollspy({ target: '#topMenu' })
+    
 
 });

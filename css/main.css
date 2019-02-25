@@ -1,6 +1,6 @@
 body {
   font-family: Raleway;
-
+  position:relative;
 }
 
 h1 {
@@ -31,17 +31,20 @@ h1 {
   text-decoration: underline;
 } */
 
+
 .navbar-dark .navbar-nav .nav-link:hover {
   color:white;
 }
 
 .about-me {
-  height:200%;
 }
 
 .experience {
-  height:300vh;
-  background-color:lightslategray;
+  background-color:black;
+}
+
+.projects {
+ 
 }
 .media-btn {
   height:75px;

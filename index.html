@@ -23,8 +23,8 @@
   <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container" id="topMenu">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="topMenu">
+      <div class="container">
         <a class="navbar-brand" href="#">&lt;David/Zhu></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,23 +33,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto d-flex flex-row">
             <li class="nav-item p-2" id="nav-about-me">
-              <a class="nav-link" href="#about-me"> About <span class="sr-only">(current)</span></a>
+              <a class="nav-link hvr-underline-from-left" href="#about-me"> About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item p-2" id="nav-experience">
-              <a class="nav-link" href="#experience"> Experience</a>
+              <a class="nav-link hvr-underline-from-left" href="#experience"> Experience</a>
             </li>
-            <li class="nav-item p-2" id="nav-projecs">
-              <a class="nav-link" href="projects"> Projects</a>
+            <li class="nav-item p-2" id="nav-projects">
+              <a class="nav-link hvr-underline-from-left" href="#projects"> Projects</a>
             </li>
             <li class="nav-item p-2" id="nav-contact">
-              <a class="nav-link" href="#contact"> Contact</a>
+              <a class="nav-link hvr-underline-from-left" href="#contact"> Contact</a>
             </li>
         </div>
       </div>
     </nav>
 
     <!-- Lander view -->
-    <div class="lander">
+    <div class="lander" data-spy="scroll" data-target="#topMenu" data-offset=0>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -57,7 +57,7 @@
               <h1 class="animated fadeIn p-3">David Zhu</h1>
               <h3 class="animated small-delay1 fadeInUp">Welcome</h3>
               <hr class="animated delay-1s zoomIn" style="border:1px solid white; width:40%;">
-              <button id="learnMore" type="button" class="mt-5 btn btn-lg animated small-delay1 fadeInUp hvr-icon-down">
+              <button id="learnMore" type="button" class="mt-5 btn btn-lg animated small-delay1 fadeInUp hvr-icon-hang">
                 Learn More
                 <i class="fa fa-chevron-circle-down hvr-icon"></i>
               </button>
@@ -69,11 +69,11 @@
 
 
     <!-- About Me Section-->
-    <div class="about-me mt-3 pt-5">
+    <div class="about-me mt-3 pt-5" id="about-me">
       <div class="container pt-3">
         <div class="row ">
           <div class="col-lg-12">
-            <div id="about-me">
+      
               <p class="display-3 shadowTxt">About Me</p>
               <div class="container py-3">  
                   <div class="card" style="border:none;">
@@ -93,7 +93,7 @@
                       </div>
                     </div>
                   </div>  
-                </div>              
+                             
             </div>
           </div>
           <div class="row justify-content-center" id="social-media">
@@ -122,9 +122,9 @@
     </div>
 
     <!-- Work Experience Carousel -->
-    <div class="experience mt-5 pt-5">
-      <div class="container pt-2">
-        <p class="display-3 shadowTxt" style="color:white;">Experience</p>
+    <div class="experience mt-3 pt-3" id="experience">
+      <div class="container pt-5">
+        <p class="display-3 shadowTxt" style="color:white; text-align: center;">Experience</p>
         <!--Carousel Wrapper-->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
 
@@ -137,23 +137,24 @@
           <!--/.Indicators-->
 
           <!--Slides-->
-          <div class="carousel-inner" role="listbox" data-interval="false">
+          <div class="carousel-inner h-100" role="listbox" data-interval="false">
 
             <!--First slide-->
             <div class="carousel-item active" data-interval="false">
 
               <div class="col-xs-12">
-                <div class="card mb-2">
+                <div class="card mb-2" >
                   <img class="card-img-top" src="images/YouiPng.png"
                     alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Software Developer @ <a href="https://www.youi.tv/">Youi.TV</a></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">January 2019 - Present</h6>
                     <p class="card-text">At Youi.TV, I maintained code for over 5 large-scale apps primarily written in C++, but occasionally in React Native and Brightscript as a part of the Dev Support Team. Our small team worked in an agile environment, continually backlog grooming incoming support tickets and achieving high customer satisfaction through quick turnarounds of bug fixes. During my time, I built and fixed apps on platforms such as Roku, tvOS, AmazonFireTV, and consoles like XBOX. </p>
                     <p class="card-text"><small class="text-muted">- Me with the new hires on my first day - January 2nd, 2019</small></p>
                     <div class="d-flex justify-content-center">
-                      <a class="btn btn-info mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
+                      <a class="btn btn-primary mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
                           <i class="fa fa-chevron-circle-left hvr-icon"></i> Prev</a>                    
-                      <a class="btn btn-info ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
+                      <a class="btn btn-primary ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
                           <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
                     </div>
                   </div>
@@ -172,12 +173,13 @@
                     alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Camp Instructor @ <a href="https://engineering.uottawa.ca/outreach-programs/summer-programs-camps/engtech-camp">uOttawa</a></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">July 2018 - August 2018</h6>
                     <p class="card-text">During the summer of 2018, I worked at a camp called EngTech. I taught programming, game creation and web design through software-based projects in Python, HTML, and CSS. We introduced campers to hardware-based projects involving Arduino, Raspberry Pi and, PCB Soldering. I ended up leading hundreds campers to develop their own design-focused projects such as 3D Modeling through TinkerCAD and Inkscape. </p>
                     <p class="card-text"><small class="text-muted">- Me getting a pie to the face in potato quality</small></p>
                     <div class="d-flex justify-content-center">
-                      <a class="btn btn-info mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
+                      <a class="btn btn-primary mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
                           <i class="fa fa-chevron-circle-left hvr-icon"></i> Prev</a>                    
-                      <a class="btn btn-info ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
+                      <a class="btn btn-primary ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
                           <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
                     </div>
                   </div>
@@ -196,31 +198,75 @@
                     alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Assistant Developer @ <a href="https://engineering.uottawa.ca/outreach-programs">uOttawa Engineering Outreach</a></h4>
-                    <p class="card-text">At Outreach, I developed and tested a summer computer science curriculum (ICS3U) that became certified for secondary school credits. I collaborated on projects that introduced Linux, Git and software project management principles. Finally, I documented each project with detailed steps and rubrics following the Ottawa-Carleton School Board standards.</p>
+                    <h6 class="card-subtitle mb-2 text-muted">February 2018 - June 2018</h6>
+                    <p class="card-text">At Outreach, I developed and tested a summer computer science curriculum (ICS3U) that became certified for secondary school credits. The course content included introduction to Python and web development languages. I collaborated on projects that introduced Linux, Git and software project management principles. Finally, I documented each project with detailed steps and rubrics following the Ottawa-Carleton School Board standards.</p>
                       <p class="card-text"><small class="text-muted">- Me with my senior developer mentors</small></p>
                     <div class="d-flex justify-content-center">
-                      <a class="btn btn-info mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
+                      <a class="btn btn-primary mr-3 hvr-icon-back" href="#multi-item-example" data-slide="prev">
                           <i class="fa fa-chevron-circle-left hvr-icon"></i> Prev</a>                    
-                      <a class="btn btn-info ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
+                      <a class="btn btn-primary ml-3 hvr-icon-forward" href="#multi-item-example" data-slide="next">Next
                           <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
             <!--/.Third slide-->
-
           </div>
           <!--/.Slides-->
-
         </div>
         <!--/.Carousel Wrapper-->
-
-
-
       </div>
+    </div>
 
+    <!-- Projects View 3x3 Grid -->
+    <div class="projects mt-3 pt-3" id="projects">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-xs-12">
+           <p class="display-3 shadowTxt" style="text-align: center;">Projects</p>
+           <p style="text-align: center;"> I have been making projects since I was 14 years old, and I don't plan on stopping. These projects were from classes, hackathons, or just done in free time on my own (like this site). In a way, this portfolio helps me see what I've learned and how far I've come as a programmer. </p>
+         </div>
+       </div>
+       <div class="row">
+        <div class="card-group">
+          <div class="card hvr-underline-reveal">
+            <img class="card-img-top" src="images/TwitterTone.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><a href="http://www.twittertone.com/">Media Tone Analyzer</a></h5>
+              <p class="card-text" style="font-size: 1rem;">Enter any hashtag/keyword and our webapp collects information on the average emotion/tone associated with that topic. Uses tweepy and praw APIs to collect and python to parse data. User interface is done in Semantic UI, with Backend done in Node and ExpressJS. Developed for cuHacks 2019.</p>
+              <a type="button" class="mt-3 btn btn-primary btn-sm hvr-icon-rotate" href="https://github.com/uwxcarletonhacks/CommentAnalyzer">
+                Learn More
+                <i class="fa fa-link hvr-icon"></i>
+                </a>
+              </div>
+          </div>
+          <div class="card hvr-underline-reveal">
+            <img class="card-img-top" src="images/Home_demo.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">HOME</h5>
+              <p class="card-text">Unity game developed during Global Game Jam 2019. Enemies spawn from the top of your screen and move in random patterns all while firing at you. The goal is to defend your HOME from invaders by either using mouse or touch input to draw deflective barriers. Created using C#. </p>
+              <a type="button" class="mt-3 btn btn-primary btn-sm hvr-icon-rotate" href="https://github.com/DavidHZhu/GameJam2k19">
+                Learn More
+                <i class="fa fa-link hvr-icon"></i>
+                </a>
+            </div>
+          </div>
+          <div class="card hvr-underline-reveal">
+            <img class="card-img-top" src="images/website.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><a href="http://davidhzhu.me/">This Website</a></h5>
+              <p class="card-text">I've always wanted to create my own website from scratch. At first, this was to learn languages such as HTML, CSS and Javascript, but now its become my own jornal where I can keep track of my progress over the years. This project will updated regularly, so please visit again!</p>
+              <a type="button" class="mt-3 btn btn-primary btn-sm hvr-icon-rotate" href="https://github.com/DavidHZhu/DavidHZhu.github.io">
+                Learn More
+                <i class="fa fa-link hvr-icon"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+
+       </div>
+      </div>
 
     </div>
 
