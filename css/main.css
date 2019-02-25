@@ -1,6 +1,6 @@
 body {
   font-family: Raleway;
-
+  position:relative;
 }
 
 h1 {
@@ -30,18 +30,24 @@ h1 {
 /* .navbar-dark .navbar-nav .active>.nav-link {
   text-decoration: underline;
 } */
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  text-decoration:underline;
+}
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color:white;
 }
 
 .about-me {
-  height:200%;
 }
 
 .experience {
-  height:300vh;
   background-color:lightslategray;
+}
+
+.projects {
+  height: 1000px;
 }
 .media-btn {
   height:75px;
