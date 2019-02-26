@@ -2157,8 +2157,8 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098D1;
-  height: 4px;
+  background: white;
+  height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.3s;
@@ -2340,7 +2340,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  border-color: #2098D1;
+  border-color: #007bff;
   border-style: solid;
   border-width: 0;
   -webkit-transition-property: border-width;
@@ -2373,7 +2373,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #007bff;
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);

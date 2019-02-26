@@ -3561,12 +3561,25 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.animated.small-delay1 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.animated.small-delay2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
