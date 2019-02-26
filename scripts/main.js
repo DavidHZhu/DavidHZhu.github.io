@@ -27,6 +27,12 @@ $(document).ready(function () {
             'slow');
     });
 
+    $("#nav-contact").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".contact").offset().top},
+            'slow');
+    });
+
     $("#learnMore").click(function() {
         $('html,body').animate({
             scrollTop: $(".about-me").offset().top},
